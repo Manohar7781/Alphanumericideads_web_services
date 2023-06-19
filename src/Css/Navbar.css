@@ -41,7 +41,7 @@ nav ul li {
 content: "";
 width: 30%;
 height: 2px;
-background: aquamarine;
+background: aquamarine; 
 position: absolute;
 bottom: -4px;
 left: 20px;
@@ -49,6 +49,8 @@ left: 20px;
 #mobile i{
 color: #fff;
 }
-@media (max-width:700px) {
+
+@media screen and (max-width:769px){
+       
     
 }
