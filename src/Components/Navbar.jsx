@@ -1,3 +1,5 @@
+import React from 'react';
+import logo from "../download.jpeg"
 import React, { Component } from 'react';
 import logo from '../logo.svg';
 import "../Css/Navbar.css";
@@ -11,7 +13,7 @@ import "../Css/Navbar.css";
   return (
     <div>
       <nav>
-        <a href='#'> <img src={logo} alt="logo" style={{"width":"85px","height":"85px"}}/> </a>
+        <a href='#'> <img src={logo} alt="logo" style={{"width":"140px","height":"100px"}}/> </a>
         <div>
             <ul id="navbar">
                 <li><a href="/">Home</a></li>
