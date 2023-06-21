@@ -1,8 +1,15 @@
 import React from 'react';
 import logo from "../download.jpeg"
+import React, { Component } from 'react';
+import logo from '../logo.svg';
 import "../Css/Navbar.css";
 
-export default function Navbar() {
+ class Navbar extends Component {
+  state = {clicked:false};
+  handleclick = () =>{
+    this.setState({clicked:!this.state.clicked})
+  }
+  render() {
   return (
     <div>
       <nav>
@@ -16,8 +23,12 @@ export default function Navbar() {
                 <li><a href="/Contactus">Contact us</a></li>
             </ul>
         </div>
-        
+        <div id='mobile' onClick={this.handleclick}>
+          <i id='bar' className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+        </div>
       </nav>
     </div>
-  )
+  );
+ }
 }
+export default Navbar;
