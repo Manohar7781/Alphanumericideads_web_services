@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 nav{
-    background: #424242;
+    background: aliceblue;
     display: flex;
     align-items: center;
     
@@ -29,8 +29,8 @@ nav ul li {
 #navbar li a{
     text-decoration: none;
     font-weight: 600;
-    color: #fff;
-    font-size: 1.3rem;
+    color: #110e0e;
+    font-size: 1.1rem;
     transition: 0.3s ease-in-out;
 
 }
@@ -51,4 +51,9 @@ color: #fff;
 }
 @media (max-width:700px) {
     
+}
+img{
+   padding-left: 10px;
+   mix-blend-mode: multiply;
+
 }
