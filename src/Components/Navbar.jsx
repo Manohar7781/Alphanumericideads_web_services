@@ -1,7 +1,5 @@
-import React from 'react';
-import logo from "../download.jpeg"
 import React, { Component } from 'react';
-import logo from '../logo.svg';
+import logo from '../download.jpeg';
 import "../Css/Navbar.css";
 
  class Navbar extends Component {
@@ -11,11 +9,12 @@ import "../Css/Navbar.css";
   }
   render() {
   return (
+    <>
     <div>
       <nav>
-        <a href='#'> <img src={logo} alt="logo" style={{"width":"140px","height":"100px"}}/> </a>
+        <a href='#'> <img src={logo} alt="logo" style={{"width":"85px","height":"85px"}}/> </a>
         <div>
-            <ul id="navbar">
+            <ul id="navbar" className={this.state.clicked ? "#navbar active" : "#navbar"}>
                 <li><a href="/">Home</a></li>
                 <li><a href="/About">About</a></li>
                 <li><a href="/Ourwork">Our Work</a></li>
@@ -28,6 +27,7 @@ import "../Css/Navbar.css";
         </div>
       </nav>
     </div>
+    </>
   );
  }
 }

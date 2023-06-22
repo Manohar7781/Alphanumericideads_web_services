@@ -1,13 +1,7 @@
-*{
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
-}
 nav{
-    background: aliceblue;
+    background: red;
     display: flex;
-    align-items: center;
-    
+    align-items: center;    
     justify-content: space-between;
     box-shadow:0 5px 15px rgba(0, 0, 0, 0.06)
 }
@@ -29,8 +23,8 @@ nav ul li {
 #navbar li a{
     text-decoration: none;
     font-weight: 600;
-    color: #110e0e;
-    font-size: 1.1rem;
+    color: #fff;
+    font-size: 1.3rem;
     transition: 0.3s ease-in-out;
 
 }
@@ -47,15 +41,41 @@ bottom: -4px;
 left: 20px;
 }
 #mobile i{
+    display: none;
+}
+#mobile i{
 color: #fff;
+align-items: center;
+padding-right: 10px;
 }
 
 @media screen and (max-width:769px){
-       
-    
-}
-img{
-   padding-left: 10px;
-   mix-blend-mode: multiply;
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;        
+        justify-content: flex-start;
+        top: 85.0px;
+        right: -300px;
+        width: 300px;
+        height: 100vh;
+        background-color: #424242;
+        box-shadow: 0 40px 60px rgb(0, 0, 0,0.1);
+        padding: 40px 0 0 10px;
 
+    }   
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li{
+        margin-bottom: 25px;
+    }
+    #mobile i{
+        display: block;
+    }
+    #mobile i{
+        font-size: 24px;
+        cursor: pointer;
+    }
 }
