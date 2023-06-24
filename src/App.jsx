@@ -6,6 +6,7 @@ import About from '../src/Components/About';
 import Ourwork from '../src/Components/Ourwork';
 import Services from '../src/Components/Services';
 import Contact from '../src/Components/Contact';
+import Footer from './Components/Footer';
 function App() {
   return (
     <div className="App">
@@ -19,6 +20,7 @@ function App() {
       <Route path='/Contactus' element={<Contact/>}/>
     </Routes>
     </BrowserRouter>
+    <Footer/>
     </div>
   );
 }

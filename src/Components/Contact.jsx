@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
+import "../Css/Contact.css"
 
 export default function Contact() {
   return (
-    <div>
-      <h1>THIS IS CONTACT PAGE</h1>
+    <div className='form-container'>
+      <h1>Send Message To Us</h1>
+      <form action="">
+        <label htmlFor=""></label>
+      </form>
     </div>
   )
 }

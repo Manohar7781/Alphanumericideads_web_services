@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.services_banner{
+    background-image: url(../Images/Web_dev_services_banner.jpg);
+    width: auto;
+    height: 400px;
+    background-size: cover;
+    filter: opacity(50%);
+    z-index: -1;
+}
+.text{
+    z-index: 1;
+        
+}
