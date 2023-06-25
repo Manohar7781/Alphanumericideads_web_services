@@ -54,8 +54,20 @@ export default function Footer() {
         <a href="/">status</a>
         </div>
       </div>
-      <p>&copy; {new Date().getFullYear()} alphanumericideas.com. All rights reserved.</p>
+<hr />
+<div className='sb_footer-below'>
+  <div className='sb_footer-copyright'>
+<p>
+  &copy;{new Date().getFullYear()}AlphanumericIdeas. All rights reserved.
+  
+</p>
+<div className='sb_footer-below-links'>
+<a href="/"><div><p>Terms and Conditions</p></div></a>
+<a href="/"><div><p>Privacy Policy</p></div></a>
 
+</div>
+  </div>
+    </div>
     </div>
   )
 }

@@ -39,6 +39,31 @@ a{
     padding-bottom: 0.4rem;
 
 }
+.sb_footer-below{
+    display: flex;
+    justify-content: space-between;
+}
+.sb_footer-below-links{
+    display: flex;
+    flex-direction: row;
+}
+.sb_footer-below-links p{
+    font-size: 13px;
+    line-height: 15px;
+    margin-left: 2rem;
+    color: #fff;
+    font-weight: 600;
+}
+hr{
+    color: #fff !important;
+    width: 100%;
+}
+.sb_footer-copyright{
+    font-size: 13px;
+    line-height: 15px;
+    color: rgb(255,255,255);
+    font-weight: 600;
+}
 @media screen and (max-width:769px) {
     .Footer{
         padding: 4rem 2rem;
@@ -49,5 +74,16 @@ a{
     .bottom div{
         width: 50%;
        
+    }
+    .sb_footer-below{
+        flex-direction: column;
+        justify-content: left;
+    }
+    .sb_footer-below-links{
+        flex-direction: column;
+    }
+    .sb_footer-below-links p{
+        margin-left: 0rem;
+        margin-top: 1rem;
     }
 }
